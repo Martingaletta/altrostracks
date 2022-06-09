@@ -265,4 +265,90 @@ h2:hover {
     }
 
     .card {
-        
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .vinilo {
+        position: relative;
+    }
+}
+
+@media (max-width: 425px) {
+    .titulo-nosotros {
+        font-size: 60px;
+    }
+
+    #sidebar {
+        margin-top: -20px;
+    }
+}
+
+/* eventos */
+section .nleft {
+    background-image: url(/assets/img/afiche2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+section .nright {
+    height: 250px;
+    background-color: grey;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.section-2 {
+    margin-top: 10px;
+}
+
+.section-2 .nleft {
+    height: 250px;
+    background-image: none;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+.section-2 .nleft h3 {
+    text-align: center;
+}
+
+.section-2 .nleft p {
+    padding: 10px;
+}
+
+.section-2 .nright {
+    background-image: url(/assets/img/afiche1.jpg);
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-3 {
+    margin-top: 15px;
+}
+
+.section-3 .nleft {
+    background-image: url(/assets/img/afiche3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-3 .nleft p {
+    text-align: center;
+}
+
+.section-3 .nleft .nright {
+    font-family: "Righteous", cursive;
+    height: 400px;
+}
+
+.fondo-imageneventos {
+    background-size: cover;
+    background-position: center;
+    background-image: url(/assets/img/vinilosdos.webp);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */
