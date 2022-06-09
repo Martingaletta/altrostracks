@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nanum+Gothic&family=Righteous&family=Roboto:ital,wght@0,100;1,300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: lightcoral !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23000000' fill-opacity='0.29' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.titulo-jumbo {
+    text-shadow: 1px 2px royalblue;
+    -webkit-animation: bounce;
+    animation: bounce;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+}
+
+.video-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.vinilogo a {
+    font-family: 'Righteous', cursive !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-1 {
+    width: 250px;
+    height: 1308px;
+    position: absolute;
+    margin-left: -300px;
+    background-color: blueviolet;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.nav-link {
+    font-size: 1.25em;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #9eafaf;
+    border-radius: 30px;
+    -webkit-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+}
+
+.my-container {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.active-nav {
+    margin-left: 0;
+}
+
+.active-cont {
+    margin-left: 250px;
+}
+
+#menu-btn {
+    background-color: coral;
+}
+
+#menu-btn:focus {
+    -webkit-box-shadow: 0 0 0 0.25rem #7952b344;
+    box-shadow: 0 0 0 0.25rem #7952b344;
+}
+
+.cont-edit {
+    margin-bottom: 100px;
+    background: #3f5efb;
+    background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+}
+
+.text-white {
+    text-align: center;
+}
+
+.fondo-imagen {
+    background-image: url(/assets/img/vinilosdos.webp);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+.vinilo:hover {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: rotate720;
+    animation-name: rotate720;
+}
+
+@-webkit-keyframes rotate720 {
+    from {
+        -webkit-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+
+    to {
+        -webkit-transform: rotateZ(720deg);
+        transform: rotateZ(720deg);
+    }
+}
+
+@keyframes rotate720 {
+    from {
+        -webkit-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+
+    to {
+        -webkit-transform: rotateZ(720deg);
+        transform: rotateZ(720deg);
+    }
+}
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+}
+
+.titulo-footer {
+    font-size: 17px;
+    color: white;
+}
+
+.jover:hover {
+    background-color: grey !important;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.card {
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    background: #ff9966;
+    background: -webkit-gradient(linear, left top, right top, from(#ff5e62), to(#ff9966));
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    -webkit-box-shadow: 20px 10px #b44547;
+    box-shadow: 20px 10px #b44547;
+}
+
+.subtitulo-jumbo {
+    font-size: 30px;
+}
+
+.card-img-top {
+    border-radius: 30px;
+}
+
+.card-img-top:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.titulo-nosotros {
+    text-shadow: 10px 15px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    /* background-color: chocolate; */
+}
+
+.titulo-nosotros:hover {
+    color: white;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.nosotros-fila {
+    height: 800px;
+}
+
+.nosotros {
+    height: 800px;
+    width: 100%;
+}
+
+.nleft {
+    background-image: url(/assets/img/quienesos.jpg);
+    background-color: #a1593e;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.nright h3 {
+    text-align: center;
+}
+
+.nright {
+    background-color: #947979;
+    border-radius: 15px;
+}
+
+.nright p {
+    text-align: justify;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #b44547;
+}
+
+h2:hover {
+    color: #ff5e62;
+}
+
+.nosotros p {
+    font-size: 20px;
+}
+
+.carousel-item {
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    height: auto;
+}
+
+.img-fluid {
+    background-size: cover;
+    background-position: center;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+@media (max-width: 800px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar .active {
+        margin-left: 0px;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    .card {
+        
