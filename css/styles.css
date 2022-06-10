@@ -184,7 +184,6 @@ footer {
     font-size: 100px;
     margin-top: 20px;
     padding: 10px;
-    /* background-color: chocolate; */
 }
 
 .titulo-nosotros:hover {
@@ -347,7 +346,7 @@ section .nright {
 .fondo-imageneventos {
     background-size: cover;
     background-position: center;
-    background-image: url(./assets/img/vinilosdos.webp);
+    background-image: url(../assets/img/vinilosdos.jpg);
     margin-top: 15px;
     margin-bottom: 30px;
 }
