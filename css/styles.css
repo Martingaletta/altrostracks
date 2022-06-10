@@ -346,7 +346,7 @@ section .nright {
 .fondo-imageneventos {
     background-size: cover;
     background-position: center;
-    background-image: url(/assets/img/vinilosdos.webp);
+    background-image: url(./assets/img/vinilosdos.webp);
     margin-top: 15px;
     margin-bottom: 30px;
 }
