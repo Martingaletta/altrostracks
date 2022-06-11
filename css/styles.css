@@ -287,7 +287,7 @@ h2:hover {
 
 /* eventos */
 section .nleft {
-    background-image: url(/assets/img/afiche2.jpg);
+    background-image: url(../assets/img/afiche2.jpg);
     background-position: center;
     background-size: cover;
     height: 800px;
@@ -318,7 +318,7 @@ section .nright {
 }
 
 .section-2 .nright {
-    background-image: url(/assets/img/afiche1.jpg);
+    background-image: url(../assets/img/afiche1.jpg);
     height: 800px;
     background-position: center;
     background-size: cover;
@@ -329,7 +329,7 @@ section .nright {
 }
 
 .section-3 .nleft {
-    background-image: url(/assets/img/afiche3.jpg);
+    background-image: url(../assets/img/afiche3.jpg);
     background-size: cover;
     background-position: center;
 }

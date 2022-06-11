@@ -251,7 +251,7 @@ h2:hover{
 
 section {
     .nleft{
-        background-image: url(./assets/img/afiche2.jpg);
+        background-image: url(../assets/img/afiche2.jpg);
         background-position: center;
         background-size: cover;
         height: 800px;
@@ -279,7 +279,7 @@ section {
         
     }
     .nright{
-        background-image: url(./assets/img/afiche1.jpg);
+        background-image: url(../assets/img/afiche1.jpg);
         height: 800px;
         background-position: center;
         background-size: cover;
@@ -288,7 +288,7 @@ section {
 .section-3{
     margin-top: 15px;
     .nleft{
-        background-image: url(./assets/img/afiche3.jpg);
+        background-image: url(../assets/img/afiche3.jpg);
         background-size: cover;
         background-position: center;
 
@@ -306,7 +306,7 @@ section {
 .fondo-imageneventos{
     background-size: cover;
     background-position: center;
-    background-image: url(.../assets/img/vinilosdos.jpg);
+    background-image: url(../assets/img/vinilosdos.jpg);
     margin-top: 15px;
     margin-bottom: 30px;
     
