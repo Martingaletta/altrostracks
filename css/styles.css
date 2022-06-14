@@ -21,6 +21,7 @@ body {
 .video-title {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 27px;
 }
 
@@ -152,17 +153,17 @@ footer {
   transition: all 0.5s ease-in-out;
 }
 
-.nosotros-fila {
+.nosotros--fila {
   height: 800px;
 }
 
-.nosotros {
+.nosotros, .nosotros--fila {
   height: 800px;
   width: 90%;
 }
 
 .nleft {
-  background-image: url(./assets/img/vinilosmanos.jpg);
+  background-image: url(../assets/img/vinilosmanos.jpg);
   background-color: rgb(161, 89, 62);
   background-position: center;
   background-size: cover;
@@ -184,15 +185,16 @@ footer {
 }
 
 h2 {
+  margin-top: 40px;
   text-align: center;
   background-color: #b44547;
 }
 
 h2:hover {
-  color: #ff5e62;
+  color: #020a01;
 }
 
-.nosotros p {
+.nosotros p, .nosotros--fila p {
   font-size: 20px;
 }
 
