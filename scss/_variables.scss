@@ -1,0 +1,21 @@
+
+
+$color1: black;
+$color2: #6c757d;
+$color3: coral;
+$fontfamily1: 'Josefin Sans', sans-serif;
+$fontfamily2: 'Nanum Gothic', sans-serif;
+$fontfamily3: 'Righteous', cursive;  
+
+$cajasEventos: (
+                "negro": $color1,
+                "gris": $color2,
+                "coral": $color3,
+);
+
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

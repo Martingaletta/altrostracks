@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nanum+Gothic&family=Righteous&family=Roboto:ital,wght@0,100;1,300&display=swap');
-
+@import "_variables.scss" ;
 
 $color1: black;
 $color2: grey;
-
+$color3: coral;
 $fontfamily1: 'Josefin Sans', sans-serif;
 $fontfamily2: 'Nanum Gothic', sans-serif;
 $fontfamily3: 'Righteous', cursive; 
-
-
 
 *{
     margin: 0;
@@ -165,7 +163,7 @@ footer{
 }
 .nosotros{
     height: 800px;
-    width: 100%;
+    width: 90%;
 }
 .nleft{
     background-image: url(./assets/img/vinilosmanos.jpg);
@@ -250,29 +248,38 @@ h2:hover{
 /* eventos */
 
 section {
+
     .nleft{
         background-image: url(../assets/img/afiche2.jpg);
         background-position: center;
         background-size: cover;
-        height: 800px;
     }
     .nright{
-        height: 250px;
         background-color: $color2;
-        font-family: $fontfamily1;
+        h3{
+            font-family: $fontfamily3;
+            font-size: 50px;
+        }
+        p{
+            font-size: 28px;
+            font-family: $fontfamily2;
+        }
 
     }
 }
 .section-2{
     margin-top: 10px;
     .nleft{
-        height: 250px;
+        // height: 250px;
         background-image: none;
-        font-family: $fontfamily2;
         h3{
+            font-size: 50px;
+            font-family: $fontfamily3;
             text-align: center;
         }
         p{
+            font-size: 28px;
+            font-family: $fontfamily2;
             padding: 10px;
         }
         
@@ -280,7 +287,7 @@ section {
     }
     .nright{
         background-image: url(../assets/img/afiche1.jpg);
-        height: 800px;
+        // height: 800px;
         background-position: center;
         background-size: cover;
     }
@@ -296,8 +303,14 @@ section {
             text-align: center;
         }
     .nright{
-        font-family: $fontfamily3;
-        height: 400px;
+        h3{
+            font-size: 50px;
+            font-family: $fontfamily3;
+        }
+        p{
+            font-size: 28px;
+            font-family: $fontfamily2;
+        }
     }
     }
 
