@@ -157,8 +157,7 @@ footer{
     color: white;
     transition: all 0.5s ease-in-out;
 }
-.nosotros--fila{
-    @extend .nosotros;
+.nosotros-fila{
     height: 800px;
 }
 .nosotros{
@@ -249,7 +248,7 @@ h2:hover{
 /* eventos */
 
 section {
-
+    margin-top: 10px;
     .nleft{
         background-image: url(../assets/img/afiche2.jpg);
         background-position: center;
@@ -269,9 +268,8 @@ section {
     }
 }
 .section-2{
-    margin-top: 10px;
+    @extend section;
     .nleft{
-        // height: 250px;
         background-image: none;
         h3{
             font-size: 50px;
@@ -288,13 +286,12 @@ section {
     }
     .nright{
         background-image: url(../assets/img/afiche1.jpg);
-        // height: 800px;
         background-position: center;
         background-size: cover;
     }
 }
 .section-3{
-    margin-top: 15px;
+    @extend section;
     .nleft{
         background-image: url(../assets/img/afiche3.jpg);
         background-size: cover;

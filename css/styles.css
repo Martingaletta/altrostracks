@@ -153,11 +153,11 @@ footer {
   transition: all 0.5s ease-in-out;
 }
 
-.nosotros--fila {
+.nosotros-fila {
   height: 800px;
 }
 
-.nosotros, .nosotros--fila {
+.nosotros {
   height: 800px;
   width: 90%;
 }
@@ -194,7 +194,7 @@ h2:hover {
   color: #020a01;
 }
 
-.nosotros p, .nosotros--fila p {
+.nosotros p {
   font-size: 20px;
 }
 
@@ -239,26 +239,26 @@ h2:hover {
   }
 }
 /* eventos */
-section .nleft {
+section, .section-3, .section-2 {
+  margin-top: 10px;
+}
+section .nleft, .section-3 .nleft, .section-2 .nleft {
   background-image: url(../assets/img/afiche2.jpg);
   background-position: center;
   background-size: cover;
 }
-section .nright {
+section .nright, .section-3 .nright, .section-2 .nright {
   background-color: grey;
 }
-section .nright h3 {
+section .nright h3, .section-3 .nright h3, .section-2 .nright h3 {
   font-family: "Righteous", cursive;
   font-size: 50px;
 }
-section .nright p {
+section .nright p, .section-3 .nright p, .section-2 .nright p {
   font-size: 28px;
   font-family: "Nanum Gothic", sans-serif;
 }
 
-.section-2 {
-  margin-top: 10px;
-}
 .section-2 .nleft {
   background-image: none;
 }
@@ -278,9 +278,6 @@ section .nright p {
   background-size: cover;
 }
 
-.section-3 {
-  margin-top: 15px;
-}
 .section-3 .nleft {
   background-image: url(../assets/img/afiche3.jpg);
   background-size: cover;
