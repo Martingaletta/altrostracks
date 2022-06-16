@@ -19,6 +19,17 @@ body{
     background-color: lightcoral !important;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23000000' fill-opacity='0.29' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
+
+h1{
+    font-family: $fontfamily3;
+    font-size: map-get($map: $display-font-sizes, $key: 3 );
+    text-align: center;
+    padding: 20px;
+}
+h1:hover{
+    transition: all 0.5s ease-out;
+    color: rgba(160, 26, 26, 0.534);
+}
 .titulo-jumbo{
     text-shadow: 1px 2px royalblue;
     animation: bounce;
@@ -148,10 +159,9 @@ footer{
 .titulo-nosotros{
     text-shadow: 10px 15px 6px rgba(0,0,0,0.3);
     text-align: center;
-    font-size: 100px;
+    $display-font-sizes: 1;
     margin-top: 20px;
     padding: 10px; 
-    /* background-color: chocolate; */
 }
 .titulo-nosotros:hover{
     color: white;
@@ -258,11 +268,15 @@ section {
         background-color: $color2;
         h3{
             font-family: $fontfamily3;
-            font-size: 50px;
+            font-size: map-get($map: $display-font-sizes, $key: 7 );
         }
         p{
-            font-size: 28px;
+            font-size: map-get($map: $display-font-sizes, $key: 7 );
             font-family: $fontfamily2;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
         }
 
     }
@@ -272,17 +286,19 @@ section {
     .nleft{
         background-image: none;
         h3{
-            font-size: 50px;
+            font-size: map-get($map: $display-font-sizes, $key: 7 );
             font-family: $fontfamily3;
             text-align: center;
         }
         p{
-            font-size: 28px;
+            font-size: map-get($map: $display-font-sizes, $key: 7 );
             font-family: $fontfamily2;
             padding: 10px;
         }
-        
-        
+        .btn{
+            display: flex;
+            justify-content: center;
+        }   
     }
     .nright{
         background-image: url(../assets/img/afiche1.jpg);
@@ -302,11 +318,11 @@ section {
         }
     .nright{
         h3{
-            font-size: 50px;
+            font-size: map-get($map: $display-font-sizes, $key: 6 );
             font-family: $fontfamily3;
         }
         p{
-            font-size: 28px;
+            font-size: map-get($map: $display-font-sizes, $key: 7 );
             font-family: $fontfamily2;
         }
     }
@@ -323,3 +339,12 @@ section {
     
 }
 
+.form-label{
+    font-size: 30px;
+}   
+.form-label:hover{
+    color: white;
+    transition: all 0.5s ease-out;
+
+
+}
