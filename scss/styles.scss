@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nanum+Gothic&family=Righteous&family=Roboto:ital,wght@0,100;1,300&display=swap');
 @import "_variables.scss" ;
+@import "media.scss";
+
+@keyframes rotate720{
+    from {
+        transform: rotateZ(0);
+    }
+
+    to{
+        transform: rotateZ(720deg);
+    }
+}
 
 $color1: black;
 $color2: grey;
@@ -18,333 +29,286 @@ body{
     min-height: 100vh;
     background-color: lightcoral !important;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23000000' fill-opacity='0.29' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
 
-h1{
-    font-family: $fontfamily3;
-    font-size: map-get($map: $display-font-sizes, $key: 3 );
-    text-align: center;
-    padding: 20px;
-}
-h1:hover{
-    transition: all 0.5s ease-out;
-    color: rgba(160, 26, 26, 0.534);
-}
-.titulo-jumbo{
-    text-shadow: 1px 2px royalblue;
-    animation: bounce;
-    animation-iteration-count: infinite;
-    animation-duration: 8s;
+    header {
+        nav {
+            .vinilogo {
+                a{
+                    font-family: 'Righteous', cursive !important;
+                    font-family: 'Roboto', sans-serif;
 
-}
+                    .vinilo{
+                        &:hover{
+                            animation-duration: 1s;
+                            animation-name: rotate720;
+                        }
+                    }
+                }
+            }
+            .nav-link{
+                font-size: 1.25em;
+            }
+            .nav-link:active,
+            .nav-link:focus,
+            .nav-link:hover{
+                background-color: rgb(158, 175, 175);
+                border-radius: 30px ;
+                transition: all 0.8s ease-out;
+            
+            }
+        }
+    }   
 
-.video-title{
-    @include centrado;
-    font-size: 27px;
-}
+    h1{
+        font-family: $fontfamily3;
+        font-size: map-get($map: $display-font-sizes, $key: 3 );
+        text-align: center;
+        padding: 20px;
 
-.vinilogo a{
-    font-family: 'Righteous', cursive !important;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-.navbar-1{
-    width: 250px;
-    height: 1308px;
-    position: absolute;
-    margin-left: -300px;
-    background-color: blueviolet;
-    transition: all 0.5s ease-out;
-}
-.nav-link{
-    font-size: 1.25em;
-}
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover{
-    background-color: rgb(158, 175, 175);
-    border-radius: 30px ;
-    transition: all 0.8s ease-out;
-
-}
-.my-container{
-    transition: 0.4s;
-}
-.active-nav{
-    margin-left: 0;
-}
-.active-cont{
-    margin-left: 250px;
-}
-
-#menu-btn{
-    background-color: coral;
-}
-#menu-btn:focus{
-    box-shadow: 0 0 0 0.25rem #7952b344;
-}
-
-
-
-.cont-edit{
-    margin-bottom: 100px;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-}
-.text-white{
-    text-align: center;
-}
-
-
-.fondo-imagen{
-    background-image: url(../assets/img/vinilosdos.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 50px;
-}
-
-.vinilo:hover{
-    animation-duration: 1s;
-    animation-name: rotate720;
-}
-
-@keyframes rotate720{
-    from {
-        transform: rotateZ(0);
+        &:hover{
+            transition: all 0.5s ease-out;
+            color: rgba(160, 26, 26, 0.534);
+        }
     }
 
-    to{
-        transform: rotateZ(720deg);
+    h2{
+        margin-top: 40px;
+        text-align: center;
+        background-color: #b44547;
+
+        &:hover{
+            color: #020a01;
+        }
     }
-}
 
-footer{
-    margin-top: 50px;
-    background-color: black;
-}
-.titulo-footer {
-    font-size: 17px;
-    color: white; 
-}
-
-.jover:hover{
-    background-color: grey !important;
-    transition: all 0.5s ease-out;
-}
-
-
-.card{
-    margin: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    background: #ff9966;  
-    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  
-    background: linear-gradient(to right, #ff5e62, #ff9966); 
-    box-shadow: 20px 10px #b44547;
-}
-
-.subtitulo-jumbo{
-    font-size: 30px;
-}
-
-.card-img-top{
-    border-radius: 30px;
-}
-.card-img-top:hover{
-    transform: scale(1.1);
-    transition: all 0.5s ease-out ;
-}
-
-.titulo-nosotros{
-    text-shadow: 10px 15px 6px rgba(0,0,0,0.3);
-    text-align: center;
-    $display-font-sizes: 1;
-    margin-top: 20px;
-    padding: 10px; 
-}
-.titulo-nosotros:hover{
-    color: white;
-    transition: all 0.5s ease-in-out;
-}
-.nosotros-fila{
-    height: 800px;
-}
-.nosotros{
-    height: 800px;
-    width: 90%;
-}
-.nleft{
-    background-image: url(../assets/img/vinilosmanos.jpg);
-    background-color:rgb(161, 89, 62) ;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-}
-.nright h3{
-    text-align: center;
-}
-.nright{
-    background-color: rgb(148, 121, 121);
-    border-radius: 15px;
-}
-.nright p{
-    text-align: justify;
-    padding: 20px;
-
-}
-
-h2{
-    margin-top: 40px;
-    text-align: center;
-    background-color: #b44547;
-}
-h2:hover{
-    color: #020a01;
-}
-
-
-.nosotros p{
-    font-size: 20px;
-
-}
-
-
-.carousel-item{
-    background-size: cover;
-    background-position: center;
-    padding: 10px;
-    height: auto;
-}
-
-.img-fluid{
-    background-size: cover;
-    background-position: center;
-    height: max-content;
-}
-
-@media (max-width:800px){
-    #sidebar{
-        margin-left: -250px;
-    }
-    #sidebar .active{
-        margin-left: 0px;
-    }
-    #sidebarCollapse span{
-        display: none;
-    }
-    .card{
-        width: 100%;
-    }
-}
-@media (max-width:768px){
-    .vinilo{
-        position: relative;
-    }
-}
-@media (max-width:425px){
-    .titulo-nosotros{
-        font-size: 60px;
-    }
-    #sidebar {
-        margin-top: -20px;
-        
-    }
-}
-
-
-
-
-/* eventos */
-
-section {
-    margin-top: 10px;
-    .nleft{
-        background-image: url(../assets/img/afiche2.jpg);
-        background-position: center;
+    .img-fluid{
         background-size: cover;
+        background-position: center;
+        height: max-content;
     }
-    .nright{
-        background-color: $color2;
-        h3{
-            font-family: $fontfamily3;
-            font-size: map-get($map: $display-font-sizes, $key: 7 );
-        }
-        p{
-            font-size: map-get($map: $display-font-sizes, $key: 7 );
-            font-family: $fontfamily2;
-        }
-        .btn{
-            display: flex;
-            justify-content: center;
-        }
 
-    }
-}
-.section-2{
-    @extend section;
-    .nleft{
-        background-image: none;
-        h3{
-            font-size: map-get($map: $display-font-sizes, $key: 7 );
-            font-family: $fontfamily3;
-            text-align: center;
+    .titulo-nosotros{   
+        text-shadow: 10px 15px 6px rgba(0,0,0,0.3);
+        text-align: center;
+        $display-font-sizes: 1;
+        margin-top: 20px;
+        padding: 10px; 
+
+        &:hover{
+            color: white;
+            transition: all 0.5s ease-in-out;
         }
-        p{
-            font-size: map-get($map: $display-font-sizes, $key: 7 );
-            font-family: $fontfamily2;
+    }
+
+    .nosotros{
+        .nright{
+            background-color: rgb(148, 121, 121);
+            border-radius: 15px;
+            
+                p{
+                    font-size: 20px;
+                    text-align: justify;
+                    padding: 20px;
+                }
+
+                & h3{
+                    text-align: center;
+                }
+            }
+
+            .nleft{
+                background-image: url(../assets/img/vinilosmanos.jpg);
+                background-color:rgb(161, 89, 62) ;
+                background-position: center;
+                background-size: cover;
+                border-radius: 15px;
+            }
+    }
+
+    .carousel{
+        .carousel-item{
+            background-size: cover;
+            background-position: center;
             padding: 10px;
+            height: auto;
         }
-        .btn{
-            display: flex;
-            justify-content: center;
-        }   
-    }
-    .nright{
-        background-image: url(../assets/img/afiche1.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-}
-.section-3{
-    @extend section;
-    .nleft{
-        background-image: url(../assets/img/afiche3.jpg);
-        background-size: cover;
-        background-position: center;
-
-        p{
-            text-align: center;
-        }
-    .nright{
-        h3{
-            font-size: map-get($map: $display-font-sizes, $key: 6 );
-            font-family: $fontfamily3;
-        }
-        p{
-            font-size: map-get($map: $display-font-sizes, $key: 7 );
-            font-family: $fontfamily2;
-        }
-    }
     }
 
-}
+    .card{
+        margin: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        background: #ff9966;  
+        background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  
+        background: linear-gradient(to right, #ff5e62, #ff9966); 
+        box-shadow: 20px 10px #b44547;
 
-.fondo-imageneventos{
-    background-size: cover;
-    background-position: center;
-    background-image: url(../assets/img/vinilosdos.jpg);
-    margin-top: 15px;
-    margin-bottom: 30px;
+        .card-img-top{
+            border-radius: 30px;
+
+            &:hover{
+                transform: scale(1.1);
+                transition: all 0.5s ease-out ;
+            }
+        }
+    }
+    .nosotros-fila{
+        height: 800px;
+    }
+    .nosotros{
+        height: 800px;
+        width: 90%;
+    }
+
+    .section {
+        margin-top: 10px;
+        
+        &   .nleft {
+                background-image: url(../assets/img/afiche2.jpg) ;
+                background-position: center;
+                background-size: cover;
+            }
+
+        .nright{
+            background-color: $color2;
+
+            h3{
+                font-family: $fontfamily3;
+                font-size: map-get($map: $display-font-sizes, $key: 7 );
+            }
+
+            p{
+                font-size: map-get($map: $display-font-sizes, $key: 7 );
+                font-family: $fontfamily2;
+            }
+
+            .btn{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .section-2{
+        @extend .section;
+
+        .nleft{
+            background-image: none;
+
+            h3{
+                font-size: map-get($map: $display-font-sizes, $key: 7 );
+                font-family: $fontfamily3;
+                text-align: center;
+            }
+
+            p{
+                font-size: map-get($map: $display-font-sizes, $key: 7 );
+                font-family: $fontfamily2;
+                padding: 10px;
+            }
+
+            .btn{
+                display: flex;
+                justify-content: center;
+            }   
+        }
+
+        .nright{
+            background-image: url(../assets/img/afiche1.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    .section-3{
+        @extend .section;
+        .nleft{
+            background-image: url(../assets/img/afiche3.jpg);
+            background-size: cover;
+            background-position: center;
     
+            p{
+                text-align: center;
+            }
+        }
+
+        .nright{
+            h3{
+                font-size: map-get($map: $display-font-sizes, $key: 6 );
+                font-family: $fontfamily3;
+            }
+            p{
+                font-size: map-get($map: $display-font-sizes, $key: 7 );
+                font-family: $fontfamily2;
+                
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    
+    }
+    .text-white{
+        text-align: center;
+    }
+    .fondo-imagen{
+        background-image: url(../assets/img/vinilosdos.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 50px;
+
+            .titulo-jumbo{
+                text-shadow: 1px 2px royalblue;
+                animation: bounce;
+                animation-iteration-count: infinite;
+                animation-duration: 8s;
+            
+            }
+            .subtitulo-jumbo{
+                font-size: 30px;
+            }
+    }
+
+    .fondo-imageneventos{
+        background-size: cover;
+        background-position: center;
+        background-image: url(../assets/img/vinilosdos.jpg);
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .cont-edit{
+        margin-bottom: 100px;
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+
+        .video-title{
+            @include centrado;
+            font-size: 27px;
+        }
+    }
+
+    .form-label{
+        font-size: 30px;
+        
+        &:hover{
+            color: white;
+            transition: all 0.5s ease-out;
+        }
+    }   
+
+    footer{
+        margin-top: 50px;
+        background-color: black;
+
+        .jover:hover{
+            background-color: grey !important;
+            transition: all 0.5s ease-out;
+        }
+    }
 }
 
-.form-label{
-    font-size: 30px;
-}   
-.form-label:hover{
-    color: white;
-    transition: all 0.5s ease-out;
 
 
-}
+
+
