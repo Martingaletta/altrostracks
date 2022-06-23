@@ -1,14 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nanum+Gothic&family=Righteous&family=Roboto:ital,wght@0,100;1,300&display=swap");
+@import "/scss/_media.scss";
+@import "/scss/_variables.scss";
+
+
 @media (max-width: 800px) {
-  #sidebar {
-    margin-left: -250px;
-  }
-  #sidebar .active {
-    margin-left: 0px;
-  }
-  #sidebarCollapse span {
-    display: none;
-  }
   .card {
     width: 100%;
   }
@@ -24,10 +19,8 @@
   .titulo-nosotros {
     font-size: 60px;
   }
-  #sidebar {
-    margin-top: -20px;
   }
-}
+
 
 @-webkit-keyframes rotate720 {
   from {
@@ -91,7 +84,6 @@ body header nav .nav-link:hover {
 
 body h1 {
   font-family: "Righteous", cursive;
-  font-size: 4rem;
   text-align: center;
   padding: 20px;
 }
@@ -139,7 +131,6 @@ body .nosotros .nright {
 }
 
 body .nosotros .nright p {
-  font-size: 20px;
   text-align: justify;
   padding: 20px;
 }
@@ -218,7 +209,6 @@ body .section .nright h3, body .section-2 .nright h3, body .section-3 .nright h3
 }
 
 body .section .nright p, body .section-2 .nright p, body .section-3 .nright p {
-  font-size: 1.5rem;
   font-family: "Nanum Gothic", sans-serif;
 }
 
@@ -242,7 +232,6 @@ body .section-2 .nleft h3 {
 }
 
 body .section-2 .nleft p {
-  font-size: 1.5rem;
   font-family: "Nanum Gothic", sans-serif;
   padding: 10px;
 }
@@ -273,12 +262,10 @@ body .section-3 .nleft p {
 }
 
 body .section-3 .nright h3 {
-  font-size: 2.5rem;
   font-family: "Righteous", cursive;
 }
 
 body .section-3 .nright p {
-  font-size: 1.5rem;
   font-family: "Nanum Gothic", sans-serif;
 }
 
@@ -313,7 +300,7 @@ body .fondo-imagen .titulo-jumbo {
 }
 
 body .fondo-imagen .subtitulo-jumbo {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 body .fondo-imageneventos {

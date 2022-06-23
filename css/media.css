@@ -1,17 +1,3 @@
-@media (max-width: 800px) {
-  #sidebar {
-    margin-left: -250px;
-  }
-  #sidebar .active {
-    margin-left: 0px;
-  }
-  #sidebarCollapse span {
-    display: none;
-  }
-  .card {
-    width: 100%;
-  }
-}
 
 @media (max-width: 768px) {
   .vinilo {
@@ -22,9 +8,6 @@
 @media (max-width: 425px) {
   .titulo-nosotros {
     font-size: 60px;
-  }
-  #sidebar {
-    margin-top: -20px;
   }
 }
 /*# sourceMappingURL=media.css.map */

@@ -1,0 +1,20 @@
+
+@media (max-width:768px){
+    .card{
+        height: 20px;
+    }
+    .titulo-jumbo{
+        font-size: 10px;
+    }
+    .vinilo{
+        position: relative;
+    }
+}
+@media (max-width:425px){
+    .titulo-jumbo{
+        font-size: 10px;
+    }
+    .titulo-nosotros{
+        font-size: 60px;
+    }
+}
