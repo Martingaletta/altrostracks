@@ -1,54 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nanum+Gothic&family=Righteous&family=Roboto:ital,wght@0,100;1,300&display=swap");
-@import "/scss/_media.scss";
-@import "/scss/_variables.scss";
-
-
-@media (max-width: 800px) {
-  .card {
-    width: 100%;
-  }
-}
-
 @media (max-width: 768px) {
+  .card {
+    height: 20px;
+  }
+
   .vinilo {
     position: relative;
   }
 }
-
 @media (max-width: 425px) {
+  .titulo-jumbo {
+    font-size: 10px;
+  }
+
   .titulo-nosotros {
     font-size: 60px;
   }
-  }
-
-
+}
 @-webkit-keyframes rotate720 {
   from {
-    -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   to {
-    -webkit-transform: rotateZ(720deg);
-            transform: rotateZ(720deg);
+    transform: rotateZ(720deg);
   }
 }
-
 @keyframes rotate720 {
   from {
-    -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   to {
-    -webkit-transform: rotateZ(720deg);
-            transform: rotateZ(720deg);
+    transform: rotateZ(720deg);
   }
 }
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -56,54 +44,43 @@ body {
   background-color: lightcoral !important;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23000000' fill-opacity='0.29' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
-
 body header nav .vinilogo a {
-  font-family: 'Righteous', cursive !important;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Righteous", cursive !important;
+  font-family: "Roboto", sans-serif;
 }
-
 body header nav .vinilogo a .vinilo:hover {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: rotate720;
           animation-name: rotate720;
 }
-
 body header nav .nav-link {
   font-size: 1.25em;
 }
-
 body header nav .nav-link:active,
 body header nav .nav-link:focus,
 body header nav .nav-link:hover {
-  background-color: #9eafaf;
+  background-color: rgb(158, 175, 175);
   border-radius: 30px;
-  -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
 }
-
 body h1 {
   font-family: "Righteous", cursive;
   text-align: center;
   padding: 20px;
 }
-
 body h1:hover {
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   color: rgba(160, 26, 26, 0.534);
 }
-
 body h2 {
   margin-top: 40px;
   text-align: center;
   background-color: #b44547;
 }
-
 body h2:hover {
   color: #020a01;
 }
-
 body .img-fluid {
   background-size: cover;
   background-position: center;
@@ -111,184 +88,153 @@ body .img-fluid {
   height: -moz-max-content;
   height: max-content;
 }
-
 body .titulo-nosotros {
   text-shadow: 10px 15px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin-top: 20px;
   padding: 10px;
 }
-
 body .titulo-nosotros:hover {
   color: white;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-
 body .nosotros .nright {
-  background-color: #947979;
+  background-color: rgb(148, 121, 121);
   border-radius: 15px;
 }
-
 body .nosotros .nright p {
+  font-size: 20px;
   text-align: justify;
   padding: 20px;
 }
-
 body .nosotros .nright h3 {
   text-align: center;
 }
-
 body .nosotros .nleft {
   background-image: url(../assets/img/vinilosmanos.jpg);
-  background-color: #a1593e;
+  background-color: rgb(161, 89, 62);
   background-position: center;
   background-size: cover;
   border-radius: 15px;
 }
-
 body .carousel .carousel-item {
   background-size: cover;
   background-position: center;
   padding: 10px;
   height: auto;
 }
-
 body .card {
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   background: #ff9966;
-  background: -webkit-gradient(linear, left top, right top, from(#ff5e62), to(#ff9966));
   background: linear-gradient(to right, #ff5e62, #ff9966);
-  -webkit-box-shadow: 20px 10px #b44547;
-          box-shadow: 20px 10px #b44547;
+  box-shadow: 20px 10px #b44547;
 }
-
 body .card .card-img-top {
   border-radius: 30px;
 }
-
 body .card .card-img-top:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.5s ease-out;
+  transform: scale(1.1);
   transition: all 0.5s ease-out;
 }
-
 body .nosotros-fila {
   height: 800px;
 }
-
 body .nosotros {
   height: 800px;
   width: 90%;
 }
-
-body .section, body .section-2, body .section-3 {
+body .section {
   margin-top: 10px;
 }
-
-body .section .nleft, body .section-2 .nleft, body .section-3 .nleft {
+body .section .nleft {
   background-image: url(../assets/img/afiche2.jpg);
-  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
-
-body .section .nright, body .section-2 .nright, body .section-3 .nright {
+body .section .nright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: grey;
 }
-
-body .section .nright h3, body .section-2 .nright h3, body .section-3 .nright h3 {
+body .section .nright h3 {
   font-family: "Righteous", cursive;
-  font-size: 1.5rem;
 }
-
-body .section .nright p, body .section-2 .nright p, body .section-3 .nright p {
+body .section .nright p {
   font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
 }
-
-body .section .nright .btn, body .section-2 .nright .btn, body .section-3 .nright .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
+body .section .nright .btn {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
+body .section-2 {
+  padding: 20px;
+}
 body .section-2 .nleft {
   background-image: none;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 body .section-2 .nleft h3 {
-  font-size: 1.5rem;
   font-family: "Righteous", cursive;
   text-align: center;
 }
-
 body .section-2 .nleft p {
   font-family: "Nanum Gothic", sans-serif;
-  padding: 10px;
+  font-size: 20px;
 }
-
 body .section-2 .nleft .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 body .section-2 .nright {
   background-image: url(../assets/img/afiche1.jpg);
-  background-position: center;
   background-size: cover;
 }
-
+body .section-3 {
+  background-color: grey;
+}
 body .section-3 .nleft {
   background-image: url(../assets/img/afiche3.jpg);
   background-size: cover;
-  background-position: center;
 }
-
 body .section-3 .nleft p {
   text-align: center;
 }
-
+body .section-3 .nright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 body .section-3 .nright h3 {
+  font-size: 2.5rem;
   font-family: "Righteous", cursive;
 }
-
 body .section-3 .nright p {
   font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
 }
-
 body .section-3 .nright .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 body .text-white {
   text-align: center;
 }
-
 body .fondo-imagen {
   background-image: url(../assets/img/vinilosdos.jpg);
   background-size: cover;
   background-position: center;
   margin-bottom: 50px;
 }
-
 body .fondo-imagen .titulo-jumbo {
   text-shadow: 1px 2px royalblue;
   -webkit-animation: bounce;
@@ -298,11 +244,9 @@ body .fondo-imagen .titulo-jumbo {
   -webkit-animation-duration: 8s;
           animation-duration: 8s;
 }
-
 body .fondo-imagen .subtitulo-jumbo {
   font-size: 20px;
 }
-
 body .fondo-imageneventos {
   background-size: cover;
   background-position: center;
@@ -310,44 +254,29 @@ body .fondo-imageneventos {
   margin-top: 15px;
   margin-bottom: 30px;
 }
-
 body .cont-edit {
   margin-bottom: 100px;
-  background: #3f5efb;
-  background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
 }
-
 body .cont-edit .video-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 27px;
 }
-
 body .form-label {
   font-size: 30px;
 }
-
 body .form-label:hover {
   color: white;
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
-
 body footer {
   margin-top: 50px;
   background-color: black;
 }
-
 body footer .jover:hover {
   background-color: grey !important;
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

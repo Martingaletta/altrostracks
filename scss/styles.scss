@@ -154,6 +154,8 @@ body{
     }
     .nosotros-fila{
         height: 800px;
+
+            
     }
     .nosotros{
         height: 800px;
@@ -165,20 +167,25 @@ body{
         
         &   .nleft {
                 background-image: url(../assets/img/afiche2.jpg) ;
-                background-position: center;
                 background-size: cover;
+                background-repeat: no-repeat;
             }
 
         .nright{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             background-color: $color2;
+            
 
             h3{
-                font-family: $fontfamily3;
-                font-size: map-get($map: $display-font-sizes, $key: 7 );
+                font-family: $fontfamily3;                
             }
 
             p{
                 font-family: $fontfamily2;
+                font-size: 20px;
             }
 
             .btn{
@@ -189,20 +196,25 @@ body{
     }
 
     .section-2{
-        @extend .section;
+        padding: 20px;
 
         .nleft{
             background-image: none;
+            background-color: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
 
             h3{
-                font-size: map-get($map: $display-font-sizes, $key: 7 );
                 font-family: $fontfamily3;
                 text-align: center;
             }
 
             p{
                 font-family: $fontfamily2;
-                padding: 10px;
+                font-size: 20px;
             }
 
             .btn{
@@ -213,29 +225,32 @@ body{
 
         .nright{
             background-image: url(../assets/img/afiche1.jpg);
-            background-position: center;
             background-size: cover;
         }
     }
     .section-3{
-        @extend .section;
+        background-color: $color2;
+
         .nleft{
             background-image: url(../assets/img/afiche3.jpg);
-            background-size: cover;
-            background-position: center;
-    
+            background-size: cover;    
             p{
                 text-align: center;
             }
         }
 
         .nright{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             h3{
                 font-size: map-get($map: $display-font-sizes, $key: 6 );
                 font-family: $fontfamily3;
             }
             p{
                 font-family: $fontfamily2;
+                font-size: 20px;
                 
             }
             .btn{
