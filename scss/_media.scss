@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @media (max-width:768px){
     .card{
@@ -16,3 +17,23 @@
         font-size: 60px;
     }
 }
+=======
+
+@media (max-width:768px){
+    .card{
+        height: 20px;
+    }
+    
+    .vinilo{
+        position: relative;
+    }
+}
+@media (max-width:425px){
+    .titulo-jumbo{
+        font-size: 10px;
+    }
+    .titulo-nosotros{
+        font-size: 60px;
+    }
+}
+>>>>>>> a28c941ef41da6df99ff50f40fdf05ee5535fd11
