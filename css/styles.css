@@ -1,32 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nanum+Gothic&family=Righteous&family=Roboto:ital,wght@0,100;1,300&display=swap");
-<<<<<<< HEAD
-=======
 @media (max-width: 768px) {
   .card {
     height: 20px;
   }
->>>>>>> a28c941ef41da6df99ff50f40fdf05ee5535fd11
-
   .vinilo {
     position: relative;
   }
-<<<<<<< HEAD
-=======
 }
 @media (max-width: 425px) {
   .titulo-jumbo {
-    font-size: 10px;
+    font-size: 18px;
   }
->>>>>>> a28c941ef41da6df99ff50f40fdf05ee5535fd11
-
   .titulo-nosotros {
     font-size: 60px;
   }
-<<<<<<< HEAD
-
-=======
-}
->>>>>>> a28c941ef41da6df99ff50f40fdf05ee5535fd11
 @-webkit-keyframes rotate720 {
   from {
     transform: rotateZ(0);
