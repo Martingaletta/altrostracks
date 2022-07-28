@@ -4,4 +4,10 @@
     position: relative;
   }
 }
+
+@media (max-width: 425px) {
+  .titulo-nosotros {
+    font-size: 60px;
+  }
+}
 /*# sourceMappingURL=media.css.map */

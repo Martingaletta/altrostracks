@@ -1,16 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nanum+Gothic&family=Righteous&family=Roboto:ital,wght@0,100;1,300&display=swap");
-@media (max-width: 768px) {
-  .card {
-    height: 20px;
-  }
+
   .vinilo {
     position: relative;
   }
-}
-@media (max-width: 425px) {
-  .titulo-jumbo {
-    font-size: 18px;
-  }
+
   .titulo-nosotros {
     font-size: 60px;
   }
